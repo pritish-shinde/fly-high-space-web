@@ -1,0 +1,39 @@
+<!-- Header with Services Button -->
+<header class="services-header">
+  <nav>
+    <!-- ...other nav items if any... -->
+    <button class="services-nav-btn" (click)="scrollToServices()">Our Services</button>
+    <!-- Add this button to navigate to Services page/section -->
+    <!-- <button class="services-nav-btn" (click)="scrollToServices()">Go to Services</button> -->
+  </nav>
+</header>
+
+<!-- Hero Section -->
+<section class="hero">
+  <div class="hero-content">
+    <h1>Empowering Agriculture with Technology</h1>
+    <p>
+      Revolutionize your farming experience with our advanced drone and data solutions. 
+      Monitor, analyze, and optimize your fields for a sustainable future.
+    </p>
+    <button class="cta-btn" (click)="openWhatsApp()">Get Started</button>
+  </div>
+</section>
+
+<!-- Features Section -->
+<section class="features" id="services">
+  <div class="features-grid">
+    <div class="feature-card" *ngFor="let feature of features">
+      <i [class]="feature.icon"></i>
+      <h3>{{ feature.title }}</h3>
+      <p>{{ feature.description }}</p>
+    </div>
+  </div>
+</section>
+
+<!-- Call to Action -->
+<section class="cta-section">
+  <h2>Ready to transform your farm?</h2>
+  <p>Contact us today and take the first step towards smart agriculture.</p>
+  <button class="cta-btn">Contact Us</button>
+</section>

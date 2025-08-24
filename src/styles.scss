@@ -1,1 +1,21 @@
 /* You can add global styles to this file, and also import other style files */
+
+body {
+	margin: 0;
+	font-family: Roboto, Arial, sans-serif;
+}
+
+// WhatsApp button custom color
+.whatsapp-btn {
+	background-color: #25D366 !important;
+	color: #fff !important;
+	border-radius: 30px !important;
+}
+
+// Angular Material toolbar shadow
+.mat-toolbar.mat-elevation-z4 {
+	box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
