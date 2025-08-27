@@ -44,6 +44,6 @@ export class ServicesComponent {
     }
   }
    openWhatsApp() {
-    window.open('https://wa.me/919730428843?text=Hello!%20I%20am%20interested%20in%20your%20drone%20products', '_blank');
+    window.open('https://wa.me/918999274775?text=Hello!%20I%20am%20interested%20in%20your%20drone%20products', '_blank');
   }
 }

@@ -1,0 +1,11 @@
+<div class="slider-wrapper">
+  <div class="slider-container">
+    <img 
+      *ngFor="let slide of slides; let i = index" 
+      [src]="slide" 
+      [class.active]="i === currentIndex"
+      class="slide"
+      alt="slide"
+    />
+  </div>
+</div>

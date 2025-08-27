@@ -1,0 +1,49 @@
+/* Wrapper adds spacing from left & right */
+.slider-wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 20px; /* space from left & right */
+  box-sizing: border-box;
+}
+
+/* Container controls actual slider size */
+.slider-container {
+  position: relative;
+  width: 90%;         /* take only 90% of available width */
+  max-width: 1000px;  /* limit on large screens */
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15); /* nice shadow */
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.slide.active {
+  opacity: 1;
+}
+
+/* 📱 Tablet */
+@media (max-width: 768px) {
+  .slider-container {
+    width: 95%;        /* smaller screen → almost full */
+    aspect-ratio: 4 / 3;
+  }
+}
+
+/* 📱 Mobile */
+@media (max-width: 480px) {
+  .slider-container {
+    width: 100%;        /* mobile → fit screen with padding */
+    aspect-ratio: 1 / 1;
+  }
+}
